@@ -1,0 +1,57 @@
+<style>
+
+  .box{
+    box-shadow: 1px 1px 10px rgba(22, 22, 22, 0.173);
+    padding: 8px;
+    width: 400px;
+    border-radius: 3px;
+  }
+
+  .tweet-button{
+    background-color: rgb(45, 93, 188);
+    padding-right: 14px;
+    padding-left: 14px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 18px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 
+      opacity 0.15s,
+      box-shadow 0.15s;
+
+    vertical-align: middle;
+  }
+
+  .tweet-button:hover{
+    opacity: 0.8;
+  }
+
+  .tweet-button:active{
+    box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  .example-image{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    object-fit: cover;
+    vertical-align: middle;
+  }
+
+  .search-box{
+    padding: 8px;
+    border: none;
+    width: 300px;
+    vertical-align: middle;
+  }
+</style>
+
+<div class="box">
+  <img class="example-image" src="D:\PHP dev lessons\HTML and CSS\7\thumbnail-1.png">
+  <input class="search-box" placeholder="What's happening?">
+  <button class="tweet-button">Tweet</button>
+</div>

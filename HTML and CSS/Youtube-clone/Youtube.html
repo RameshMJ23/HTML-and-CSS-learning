@@ -3,16 +3,294 @@
 <html>
   <head>
     <title>Youtube clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles\video.css">
+    <link rel="stylesheet" href="styles\general.css">
+  
     <style>
-      .thumbnail-1{
-        width: 300px;
-        object-fit: contain;
+
+      body{
+        padding-top: 84px;
+      }
+
+      .header{
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        background-color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 64px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(195, 195, 195);
+      }
+
+      .left-section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .menu{
+        height: 24px;
+        width: 24px;
+        margin-left: 24px;
+        margin-right: 24px;
+      }
+
+      .youtube-logo{
+        flex: 1;
+        height: 20px;
+      }
+
+
+      .middle-section{
+        display: flex;
+        flex: 1;
+        max-width: 500px;
+        margin-left: 30px;
+        margin-right: 20px;
+        align-items: center;
+      }
+
+      .search-box{
+        flex: 1;
+        height: 33px;
+        border-color: rgb(195, 195, 195);  
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 2px;
+        box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05); 
+        font-family: Roboto, Arial;
+        font-size: 16px;
+        width: 0;
+      }
+
+      .search-box::placeholder{
+        font-family: Roboto, Arial;
+        font-size: 16px;
+        padding-left: 8px;
+      }
+
+      .search-icon-button{
+        width: 60px;
+        height: 37px;
+        margin-left: -2px;
+        border-color: rgb(195, 195, 195);
+        border-style: solid;
+        border-width: 1px;
+      }
+
+      .search-icon{
+        height: 24px;
+        margin-top: 4px;
+      }
+
+      .voice-search-button{
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        border: none;
+        background-color: rgb(235, 235, 235);
+        margin-left: 10px;
+      }
+
+      .voice-search-icon{
+        height: 24px;
+        margin-top: 4px;
+      }
+
+      .right-section{
+        width: 220px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 20px;
+        flex-shrink: 0;
+      }
+
+      .upload-icon{
+        height: 24px;
+      } 
+
+      .youtube-apps-icon{
+        height: 24px;
+      }
+
+      .notifications-icon{
+        height: 24px;
+      }
+
+      .current-user-icon{
+        height: 32px;
+        border-radius: 16px;
       }
     </style>
   </head>
-  <body>
-    <img class="thumbnail-1" src="resources/thumbnail-1.png">
 
-    <input class="search-box" placeholder="Search">
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img class="menu" src="resources/hamburger-menu.svg">
+        <img class="youtube-logo" src="resources/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+        <input class="search-box" placeholder="Search">
+        <button class="search-icon-button">
+          <img class="search-icon" src="resources/search.svg">
+        </button>
+         <button class="voice-search-button">
+          <img class="voice-search-icon" src="resources/voice-search-icon.svg">
+        </button>
+      </div>
+      <div class="right-section">
+        <img class="upload-icon" src="resources/upload.svg">
+        <img class="youtube-apps-icon" src="resources/youtube-apps.svg">
+        <img class="notifications-icon" src="resources/notifications.svg">
+        <img class="current-user-icon" src="resources/my-channel.jpeg">
+      </div>
+    </div>
+
+    <div class="main-grid">
+      <div class="video-container">
+      <div class="video-thumbail-container">
+        <img class="thumbnail" src="resources/thumbnail-1.webp">
+      </div>
+      <div class="video-info">
+        <div class="channel-pic-container">
+          <img class="channel-pic" src="resources/channel-pro-pic-1.jpeg">
+        </div>
+        <div class="video-description">
+          <p class="video-title">
+            Talking Tech and AI with Google CEO Sunder Pichai!
+          </p>
+          <p class="video-creator">
+            Marques Brownlee &#x2713;
+          </p>
+          <p class="video-views-date">
+            3.4M views &#183; 6 months ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <div class="video-thumbail">
+        <img class="thumbnail" src="resources/thumbnail-2.webp">
+      </div>
+      <div class="video-info">
+        <div class="channel-pic-container">
+          <img class="channel-pic" src="resources/channel-pro-pic-2.jpeg">
+        </div>
+        <div class="video-description">
+          <p class="video-title">
+            Try Not To Laugh Challenge #9
+          </p>
+          <p class="video-creator">
+            Markiplier
+          </p>
+          <p class="video-views-date">
+            19M views &#183; 4 years ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+      <div class="video-container">
+        <div class="video-thumbail-container">
+          <img class="thumbnail" src="resources/thumbnail-3.webp">
+        </div>
+        <div class="video-info">
+          <div class="channel-pic-container">
+            <img class="channel-pic" src="resources/channel-pro-pic-3.jpeg">
+          </div>
+          <div class="video-description">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sunder Pichai!
+            </p>
+            <p class="video-creator">
+              Marques Brownlee &#x2713;
+            </p>
+            <p class="video-views-date">
+              3.4M views &#183; 6 months ago
+            </p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="video-container">
+        <div class="video-thumbail">
+          <img class="thumbnail" src="resources/thumbnail-4.webp">
+        </div>
+        <div class="video-info">
+          <div class="channel-pic-container">
+            <img class="channel-pic" src="resources/channel-pro-pic-4.jpeg">
+          </div>
+          <div class="video-description">
+            <p class="video-title">
+              Try Not To Laugh Challenge #9
+            </p>
+            <p class="video-creator">
+              Markiplier
+            </p>
+            <p class="video-views-date">
+              19M views &#183; 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-container">
+        <div class="video-thumbail-container">
+          <img class="thumbnail" src="resources/thumbnail-5.webp">
+        </div>
+        <div class="video-info">
+          <div class="channel-pic-container">
+            <img class="channel-pic" src="resources/channel-pro-pic-5.jpeg">
+          </div>
+          <div class="video-description">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sunder Pichai!
+            </p>
+            <p class="video-creator">
+              Marques Brownlee &#x2713;
+            </p>
+            <p class="video-views-date">
+              3.4M views &#183; 6 months ago
+            </p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="video-container">
+        <div class="video-thumbail">
+          <img class="thumbnail" src="resources/thumbnail-6.webp">
+        </div>
+        <div class="video-info">
+          <div class="channel-pic-container">
+            <img class="channel-pic" src="resources/channel-pro-pic-6.jpeg">
+          </div>
+          <div class="video-description">
+            <p class="video-title">
+              Try Not To Laugh Challenge #9
+            </p>
+            <p class="video-creator">
+              Markiplier
+            </p>
+            <p class="video-views-date">
+              19M views &#183; 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+
 </html>
