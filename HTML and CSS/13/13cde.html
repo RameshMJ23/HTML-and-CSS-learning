@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <style>
+    .outer-box {
+      width: 350px;
+      border-style: solid;
+      border-color: rgb(235, 235, 235);
+      border-radius: 5px;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-bottom: 8px;
+      border-width: 1px;
+      box-shadow: 0px 0px 3px rgb(169, 168, 168);
+    }
+
+    .notification-box{
+      display: flex; 
+      align-items: center;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      flex-direction: row;
+    }
+
+    .details-box{
+      display: flex; 
+      flex-direction: column; 
+      margin-left: 5px;
+      flex: 1;
+    }
+
+    .name-time-box{
+      display: flex; justify-content: space-between;
+    }
+
+    .inbox-text {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      color: grey;
+      font-size: 14px;
+    }
+
+    .name,
+    .heading {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .heading {
+      font-size: 16px;
+    }
+
+    .time,
+    .description {
+      color: gray;
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+    .image {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="outer-box">
+    <p class="inbox-text">ALL INBOXES</p>
+    <div class="notification-box">
+      <img src="D:\PHP dev lessons\HTML and CSS\9\cat-1.jpg" class="image">
+      <div class="details-box">
+        <div class="name-time-box">
+          <span class="name">Chewy Promotions</span>
+          <span class="time">4:58 PM</span>
+        </div>
+        <text class="heading">Biggest sales of the year!</text>
+        <text class="description">Hey there! We're writing to tell you about our...</text>
+      </div>
+    </div>
+
+    <div class="notification-box">
+      <img src="D:\PHP dev lessons\HTML and CSS\9\cat-2.jpg" class="image">
+      <div class="details-box">
+        <div class="name-time-box">
+          <span class="name">barte Promotions</span>
+          <span class="time">3:58 PM</span>
+        </div>
+        <text class="heading">Biggest sales of the year!</text>
+        <text class="description">Hey there! We're writing to tell you about our...</text>
+      </div>
+    </div>
+
+    <div class="notification-box">
+      <img src="D:\PHP dev lessons\HTML and CSS\9\cat-3.jpg" class="image">
+      <div class="details-box">
+        <div class="name-time-box">
+          <span class="name">Abn Promotions</span>
+          <span class="time">7:50 AM</span>
+        </div>
+        <text class="heading">Biggest sales of the year!</text>
+        <text class="description">Hey there! We're writing to tell you about our...</text>
+      </div>
+    </div>
+</body>
+
+</html>

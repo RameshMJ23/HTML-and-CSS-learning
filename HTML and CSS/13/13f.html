@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+
+      .main-box{
+        display: flex;
+        align-items: start;
+        width: 400px;
+      }
+      
+      .post-details-box{
+        display: flex;
+        flex-direction: column;
+        margin-left: 8px;
+      }
+      
+      .post-description{
+        margin-top: 4px;
+        margin-bottom: 8px;
+      }
+
+      .account-details-box{
+        display: flex;
+      }
+
+      .account-name{
+        font-weight: bold;
+      }
+
+      .account-tag{
+        color: grey;
+        margin-left: 5px;
+      }
+
+      .link-box{
+        display: flex;
+        border-radius: 15px;
+        border-style: solid;
+        border-color: rgb(182, 182, 182);
+        border-width: 1px;
+        align-items: center;
+        width: 310px;
+      }
+
+      .thumbnail{
+        height: 70px;
+        width: 90px;
+        background-color: rgb(182, 182, 182);
+        border-top-left-radius: 15px;
+        margin-left: -2px;
+        border-bottom-left-radius: 15px;
+      }
+
+      .link-details-box{
+        display: flex;
+        flex-direction: column;
+        margin-left: 8px;
+        flex: 1;
+        background-color: white;
+        width: 180px;
+        margin-right: 2px;
+      }
+
+      .account-pro-pic{
+        width: 45px;
+        border-radius: 22px;
+      }
+
+      .link-website{
+        color: rgb(182, 182, 182);
+        font-size: 15px;
+      }
+
+      .link-description{
+        font-size: 15px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="main-box">
+      <img class="account-pro-pic" src="D:\PHP dev lessons\HTML and CSS\9\cat-1.jpg">
+      <div class="post-details-box">
+          <div class="account-details-box">
+            <span class="account-name">supersimple.dev</span>
+            <span class="account-tag">@SuperSimpleDev</span>
+          </div>
+          <p class="post-description">What is backend web developement? A complete overview. New video is up!</p>
+          <div class="link-box">
+            <div class="thumbnail"></div>
+            <div class="link-details-box">
+              <span class="link-website">youtube.com</span>
+              <span class="link-description">Backend web development - a complete overview (2021)</span>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
