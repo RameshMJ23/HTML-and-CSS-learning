@@ -34,6 +34,11 @@
   font-size: 14px;
   color: black;
   line-height: 20px;
+  cursor: pointer;
+}
+
+.video-link{
+  text-decoration: none;
 }
 
 .video-creator {

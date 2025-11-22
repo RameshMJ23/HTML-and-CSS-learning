@@ -9,53 +9,7 @@
     <link rel="stylesheet" href="styles\video.css">
     <link rel="stylesheet" href="styles\general.css">
     <link rel="stylesheet" href="styles\header.css">
-  
-    <style>
-
-      body{
-        padding-top: 84px;
-        padding-left: 96px;
-        padding-right: 24px;
-        background-color: rgb(248, 248, 248);
-      }
-
-
-
-      .sidebar{
-        background-color: white;
-        color: black;
-        position: fixed;
-        top: 64px;
-        bottom: 0px;
-        left: 0px;
-        width: 72px;
-        z-index: 200;
-        padding-top: 5px;
-      }
-
-      .sidebar-link{
-        height: 72px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-      }
-
-      .sidebar-link:hover{
-        background-color: rgb(241, 240, 240);
-      }
-
-      .sidebar-link img{
-        height: 24px;
-        margin-bottom: 4px;
-      }
-
-      .sidebar-link div{
-        font-family: Roboto, Arial;
-        font-size: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles\sidebar.css">
   </head>
 
   <body>
@@ -139,7 +93,11 @@
     <div class="main-grid">
       <div class="video-container">
         <div class="video-thumbail-container">
-          <img class="thumbnail" src="resources/thumbnail-1.webp">
+          <a class="video-link" 
+            href="https://www.youtube.com/watch?v=n2RNcPRtAiY"
+            target="_blank">
+            <img class="thumbnail" src="resources/thumbnail-1.webp">
+          </a>
           <div class="duration">
             14:20
           </div>
@@ -149,9 +107,13 @@
             <img class="channel-pic" src="resources/channel-pro-pic-1.jpeg">
           </div>
           <div class="video-description">
-            <p class="video-title">
-              Talking Tech and AI with Google CEO Sunder Pichai!
-            </p>
+            <a class="video-link" 
+              href="https://www.youtube.com/watch?v=n2RNcPRtAiY"
+              target="_blank">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sunder Pichai!
+              </p>
+            </a>
             <p class="video-creator">
               Marques Brownlee &#x2713;
             </p>
@@ -164,7 +126,12 @@
 
     <div class="video-container">
       <div class="video-thumbail-container">
-        <img class="thumbnail" src="resources/thumbnail-2.webp">
+        <a class="video-link" 
+          href="https://www.youtube.com/watch?v=mP0RAo9SKZk"
+          target="_blank">
+          <img class="thumbnail" src="resources/thumbnail-2.webp">
+        </a>
+        
         <div class="duration">
           8:10
         </div>
@@ -172,12 +139,15 @@
       <div class="video-info">
         <div class="channel-pic-container">
           <img class="channel-pic" src="resources/channel-pro-pic-2.jpeg">
-          
         </div>
         <div class="video-description">
-          <p class="video-title">
-            Try Not To Laugh Challenge #9
-          </p>
+          <a class="video-link" 
+            href="https://www.youtube.com/watch?v=mP0RAo9SKZk"
+            target="_blank">
+            <p class="video-title">
+              Try Not To Laugh Challenge #9
+            </p>
+          </a>
           <p class="video-creator">
             Markiplier
           </p>
@@ -190,7 +160,11 @@
 
       <div class="video-container">
         <div class="video-thumbail-container">
-          <img class="thumbnail" src="resources/thumbnail-3.webp">
+          <a class="video-link" 
+            href="https://www.youtube.com/watch?v=FgjPQQeTh1w"
+            target="_blank">
+            <img class="thumbnail" src="resources/thumbnail-3.webp">
+          </a>      
           <div class="duration">
             10:02
           </div>
@@ -200,9 +174,13 @@
             <img class="channel-pic" src="resources/channel-pro-pic-3.jpeg">
           </div>
           <div class="video-description">
-            <p class="video-title">
-              Crazy Tik Toks Taken Moments Before DISASTER
-            </p>
+            <a class="video-link" 
+              href="https://www.youtube.com/watch?v=FgjPQQeTh1w"
+              target="_blank">
+              <p class="video-title">
+                Crazy Tik Toks Taken Moments Before DISASTER
+              </p>
+            </a>
             <p class="video-creator">
               SSSniperWolf &#x2713;
             </p>
@@ -215,7 +193,11 @@
 
       <div class="video-container">
         <div class="video-thumbail-container">
-          <img class="thumbnail" src="resources/thumbnail-4.webp">
+          <a class="video-link" 
+            href="https://www.youtube.com/watch?v=094y1Z2wpJg"
+            target="_blank">
+            <img class="thumbnail" src="resources/thumbnail-4.webp">
+          </a>  
           <div class="duration">
             7:01
           </div>
@@ -225,9 +207,14 @@
             <img class="channel-pic" src="resources/channel-pro-pic-4.jpeg">
           </div>
           <div class="video-description">
-            <p class="video-title">
-              The Simplest Math Problem No One Can Solve - Collatz Conjecture
-            </p>
+            <a class="video-link" 
+              href="https://www.youtube.com/watch?v=094y1Z2wpJg"
+              target="_blank">
+              <p class="video-title">
+                The Simplest Math Problem No One Can Solve - Collatz Conjecture
+              </p>
+            </a>
+            
             <p class="video-creator">
               Veritasium &#x2713;
             </p>
@@ -241,7 +228,11 @@
 
       <div class="video-container">
         <div class="video-thumbail-container">
-          <img class="thumbnail" src="resources/thumbnail-5.webp">
+          <a class="video-link" 
+            href="https://www.youtube.com/watch?v=86CQq3pKSUw"
+            target="_blank">
+            <img class="thumbnail" src="resources/thumbnail-5.webp">
+          </a>  
           <div class="duration">
             6:05
           </div>
@@ -251,9 +242,13 @@
             <img class="channel-pic" src="resources/channel-pro-pic-5.jpeg">
           </div>
           <div class="video-description">
-            <p class="video-title">
-              Kadane's Algorithm to Maximum Sum Subarray Problem
-            </p>
+            <a class="video-link" 
+              href="https://www.youtube.com/watch?v=86CQq3pKSUw"
+              target="_blank">
+              <p class="video-title">
+                Kadane's Algorithm to Maximum Sum Subarray Problem
+              </p>
+            </a>   
             <p class="video-creator">
               CS Dojo
             </p>
@@ -266,7 +261,11 @@
 
       <div class="video-container">
         <div class="video-thumbail-container">
-          <img class="thumbnail" src="resources/thumbnail-6.webp">
+          <a class="video-link" 
+            href="https://www.youtube.com/watch?v=yXWw0_UfSFg"
+            target="_blank">
+            <img class="thumbnail" src="resources/thumbnail-6.webp">
+          </a>
           <div class="duration">
             9:10
           </div>
@@ -276,9 +275,13 @@
             <img class="channel-pic" src="resources/channel-pro-pic-6.jpeg">
           </div>
           <div class="video-description">
-            <p class="video-title">
-              Anything You Can Fit In The Circle I’ll Pay For
-            </p>
+            <a class="video-link" 
+              href="https://www.youtube.com/watch?v=yXWw0_UfSFg"
+              target="_blank">
+              <p class="video-title">
+                Anything You Can Fit In The Circle I’ll Pay For
+              </p>
+            </a>  
             <p class="video-creator">
               MrBreast
             </p>
